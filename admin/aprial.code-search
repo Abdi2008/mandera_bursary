@@ -1,0 +1,59 @@
+# Query: aprial
+# ContextLines: 1
+
+19 results - 11 files
+
+admin\approve.php:
+  81  					 <option value="">~~~ Select period ~~~</option>
+  82: 					 <option value="Jan to April">Jan to April</option>
+  83  					 <option value="May to Aug">May to Aug</option>
+
+admin\approved.php:
+  96  					 <option value="">~~~ Select period ~~~</option>
+  97: 					 <option value="Jan to April">Jan to April</option>
+  98  					 <option value="May to Aug">May to Aug</option>
+
+admin\bursary.php:
+  96  					 <option value="">~~~ Select period ~~~</option>
+  97: 					 <option value="Jan to April">Jan to April</option>
+  98  					 <option value="May to Aug">May to Aug</option>
+
+admin\busaryDetails.php:
+  105  					 <option value="">~~~ Select period ~~~</option>
+  106: 					 <option value="Jan to April">Jan to April</option>
+  107  					 <option value="May to Aug">May to Aug</option>
+
+admin\category.php:
+  106  					 <option value="">~~~ Select period ~~~</option>
+  107: 					 <option value="Jan to April">Jan to April</option>
+  108  					 <option value="May to Aug">May to Aug</option>
+
+admin\declined.php:
+  96  					 <option value="">~~~ Select period ~~~</option>
+  97: 					 <option value="Jan to April">Jan to April</option>
+  98  					 <option value="May to Aug">May to Aug</option>
+
+admin\declinedDetails.php:
+  105  					 <option value="">~~~ Select period ~~~</option>
+  106: 					 <option value="Jan to April">Jan to April</option>
+  107  					 <option value="May to Aug">May to Aug</option>
+
+admin\viewDetails.php:
+  110  					 <option value="">~~~ Select period ~~~</option>
+  111: 					 <option value="Jan to April">Jan to April</option>
+  112  					 <option value="May to Aug">May to Aug</option>
+
+admin\includes\declined.php:
+  96  					 <option value="">~~~ Select period ~~~</option>
+  97: 					 <option value="Jan to April">Jan to April</option>
+  98  					 <option value="May to Aug">May to Aug</option>
+
+database\mandera-old.sql:
+  61  INSERT INTO `bursary_activity` (`bursary_id`, `period_name`, `amount`, `p_year`) VALUES
+  62: (3, 'Jan to April', '20000.00', '2023');
+  63  
+
+student\application.php:
+  94  					 <option value="">~~~ Select period ~~~</option>
+  95: 					 <option value="Jan to April">Jan to April</option>
+  96  					 <option value="May to Aug">May to Aug</option>

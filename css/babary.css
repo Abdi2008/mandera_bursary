@@ -1,0 +1,102 @@
+
+.main-body{
+    background-image:url("images/logo.jpeg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    object-fit:cover;
+    background-position: center;
+    backdrop-filter: contrast(1);
+}
+.main-text{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* border:2px solid green; */
+}
+.dashboard-parent{
+    display:flex;
+    flex-wrap:wrap;
+}
+.aside-dashboard{
+  background:#2C2D2D;    
+  flex-basis:23%;
+}
+.main-dashboard{
+  /* height:300px; */
+  /* border:2px solid blue; */
+  flex-basis:77%;
+}
+.brand-logo{
+    height:120px;
+    width:300px;
+    border:2px solid red;
+}
+.bb-logo{
+    height:150px;
+    width:150px;
+}
+.bb-logo img{
+    width:100%;
+    height:100%;
+}
+.bran-logo{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    background:whitesmoke;
+}
+.nav-item {
+   /* border:2px solid green; */
+   padding:10px !important;
+   letter-spacing:1.5px;
+}
+.nav-item p{
+  color:white;
+  /* font-size:18px; */
+}
+.nav-item:hover{
+   background:grey !important;
+}
+.tobbarr{
+  height:150px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tobbarr .sub1{
+     height:75px;
+     background:whitesmoke;
+}
+.sub1{
+   display:flex;
+   justify-content:space-around;
+   flex-wrap:wrap;
+   align-items:center;
+}
+.sub-nav{
+    width:98%;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.sub-nav a{
+    font-size:22px;
+}
+
+@media only screen and (max-width: 980px) {
+  .aside-dashboard{
+      display:none;
+  }
+  .main-dashboard{
+     flex-basis:100% !important;
+  }
+
+}
+@media only screen and (max-width: 468px) {
+  .tobbarr{
+    height:188px;
+  }
+  .tobbarr .sub1{
+     height:90px;
+  }
+}
