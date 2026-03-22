@@ -63,7 +63,7 @@
                                         <label for="cell_id" class="control-label">Gender</label>
                                         <select class="form-control form-control-sm rounded-0" name="gender" id="cell_id" required="required">
                                             <option value="Male">Male</option>
-                                            <option value="Female">Femake</option>
+                                            <option value="Female">Female</option>
                                         </select>
                                     </div>
                                 </div>
@@ -176,7 +176,7 @@
                             </div>
                         </div>
                         <?php   
-                          $bursary_id = $_REQUEST['bursary_id'];
+                          $bursary_id = $_REQUEST['bursary_id'] ?? null;
                         ?>
                         <input type="hidden" name="bursary_id" value="<?php echo $bursary_id; ?>">
                     </form>

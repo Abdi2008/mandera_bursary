@@ -96,7 +96,7 @@
                     </li> 
 
                     <li class="nav-item dropdown">
-                      <a href="pdf/generate-pdf.php" class="nav-link nav-prisons">
+                      <a href="report-filter.php" class="nav-link nav-prisons">
                         <i class="nav-icon fas fa-th-list" style="color:white;"></i>
                         <p>
                           Generate Report
