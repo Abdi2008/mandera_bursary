@@ -284,6 +284,21 @@ include_once("includes/dbconnection.php");
               </td></tr>
             <?php endif; ?>
             </tbody>
+            <?php if($count > 0):
+              // Calculate totals
+              $total_applied   = $conn->query("SELECT SUM(ba.total_amount) as t FROM bursary_application ba JOIN students s ON ba.student_id=s.student_id JOIN bursary_activity act ON ba.bursary_id=act.bursary_id $whereSQL")->fetch_assoc()['t'];
+              $total_allocated = $conn->query("SELECT SUM(ba.given_amount) as t FROM bursary_application ba JOIN students s ON ba.student_id=s.student_id JOIN bursary_activity act ON ba.bursary_id=act.bursary_id $whereSQL")->fetch_assoc()['t'];
+            ?>
+            <tfoot>
+              <tr style="background:#0f2744; color:#fff; font-weight:bold;">
+                <td colspan="6" style="padding:12px 14px; text-align:right; font-size:13px; border:none;">TOTAL</td>
+                <td style="padding:12px 14px; font-size:13px; border:none;">KSh <?php echo number_format($total_applied ?? 0, 2); ?></td>
+                <td style="padding:12px 14px; font-size:13px; border:none; color:#4ade80;">KSh <?php echo number_format($total_allocated ?? 0, 2); ?></td>
+                <td style="border:none;"></td>
+              </tr>
+            </tfoot>
+            <?php endif; ?>
+            </tbody>
           </table>
         </div>
 
